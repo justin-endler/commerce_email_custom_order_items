@@ -1,0 +1,9 @@
+name = Commerce Email Custom Order Items
+description = Provides a hook to alter the order items before rendering.
+package = Commerce (contrib)
+core = 7.x
+version = "7.x-1.x-dev"
+
+files[] = commerce_email_custom_order_items.api.php
+dependencies[] = commerce
+dependencies[] = commerce_email
