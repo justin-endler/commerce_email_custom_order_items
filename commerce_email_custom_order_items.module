@@ -117,7 +117,7 @@ function _commerce_email_custom_order_items($order, $theme=TRUE) {
   // Sale data.
   $data = $wrapper->commerce_order_total->data->value();
   if (!empty($data['components'])) {
-    foreach ($data['components'] as $key => &$component) {
+    foreach ($data['components'] as $key => $component) {
       if ($data['components'][$key]['name'] == 'base_price') {
         // Update rows info.
         $rows_info = _commerce_email_custom_order_items_update_rows_info($rows_info, 'base_price', $data['components'][$key], $row_index);
